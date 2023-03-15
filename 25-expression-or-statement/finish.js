@@ -6,7 +6,7 @@
  *  - выражение-инструкция (expression statement)
  */
 
-15
+15 //(expression statement)
 
 const myObject = {
   x: 10,
