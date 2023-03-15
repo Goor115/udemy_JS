@@ -3,4 +3,8 @@
  * Что будет выведено в консоль?
  */
 
-console.log(3 || (true && null) || false)
+// console.log(3 || (true && null) || false)
+
+console.log(true && false && 10);
+
+console.log(false || true || 10);
