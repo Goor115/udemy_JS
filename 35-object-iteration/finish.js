@@ -13,3 +13,17 @@ const myObject = {
   key4: null,
   key10: NaN,
 }
+
+// const arrKey = Object.keys(myObject)
+
+// arrKey.forEach((e) => {
+//   if (e === "key1" || e === "key3") {
+//     console.log(myObject[e]);
+//   }
+// })
+
+for (let prop in myObject ) {
+  if (prop === "key1" || prop === "key3") {
+    console.log(myObject[prop]);
+  }
+}
