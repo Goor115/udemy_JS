@@ -22,8 +22,18 @@ const myObject = {
 //   }
 // })
 
+
+// for (let prop in myObject ) {
+//   if (prop === "key1" || prop === "key3") {
+//     console.log(myObject[prop]);
+//   }
+// }
+
 for (let prop in myObject ) {
-  if (prop === "key1" || prop === "key3") {
-    console.log(myObject[prop]);
+if (
+    (myObject.hasOwnProperty('key1') && prop === 'key1') ||
+    (myObject.hasOwnProperty('key3') && prop === 'key3')
+  ) {
+    console.log(myObject[prop])
   }
 }
