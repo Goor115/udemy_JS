@@ -10,3 +10,11 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+
+
+const login = function (name) {
+    return `hi ${name}`; 
+}
+
+ console.log(login('igor')); 
+ console.log(login('Vitaliy')) 

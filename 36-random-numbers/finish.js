@@ -18,3 +18,22 @@ const MIN = 1000
 const MAX = 9999
 
 const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
+
+function rundomNumber(min , max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function pushArrNumber(arr, min, max) {
+    let newRandomNumber 
+    const newRandomArr = [...arr]
+    do {
+        newRandomNumber = rundomNumber(min, max)
+    } while (newRandomArr.includes(newRandomNumber))
+    newRandomArr.push(newRandomNumber)
+    return newRandomArr
+}
+
+const updatedArray = pushArrNumber(myNumbers, MIN, MAX)
+
+console.log(myNumbers);
+console.log(updatedArray);

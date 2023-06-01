@@ -8,3 +8,8 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+
+const myArr = ['Igor',  35, true]
+console.log(myArr);
+myArr[1] = 25
+console.log(myArr);

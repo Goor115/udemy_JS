@@ -4,3 +4,7 @@
  *
  * 2. Выведите значение в консоль
  */
+
+const date = new Date()
+const curentDate = date.getMinutes()
+console.log(curentDate);

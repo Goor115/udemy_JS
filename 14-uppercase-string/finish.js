@@ -12,3 +12,12 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+
+const profile = 'igor'
+console.log(profile instanceof String);
+console.log(typeof profile);
+const logo = profile.toUpperCase()
+console.log(logo);
+
+
+
