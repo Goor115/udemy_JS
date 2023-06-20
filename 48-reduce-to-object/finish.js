@@ -7,7 +7,15 @@
  * равными сумме всех количеств в каждой категории
  */
 
+function quantitiesByCategories(products) {
+  return  products.reduce((qtysByCtegories, product) => {
+    qtysByCtegories[product.category] = (qtysByCtegories[product.category] || 0) + product.quantity
 
+    return qtysByCtegories
+  }, {})
+
+
+}
 
 const inputProducts = [
   {
