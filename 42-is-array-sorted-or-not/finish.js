@@ -41,3 +41,11 @@ console.log(arraySortInfo(d)) // Массив не отсортирован
  * Подсказка 2: Вы должны использовать два параметра в колбэк функции "element", "index"
  * Подсказка 3: Каждый элемент массива, кроме первого, следует сравнивать с предыдущим
  */
+
+const arraySortInfo = (inputArray) => {
+    if (inputArray.some((element) => typeof element !== 'number')) {
+        return "Некоторые элементы не являются числами"
+    }
+
+    if ()
+}
