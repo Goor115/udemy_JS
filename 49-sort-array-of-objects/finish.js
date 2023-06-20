@@ -36,8 +36,13 @@ const inputProducts = [
   },
 ]
 
-// const sortedProducts = sortProductsByPrice(inputProducts)
+const sortProductsByPrice = (products) => {
+  const copyOfProduct = [...products]
+  return copyOfProduct.sort((a, b) => a.price - b.price)
+}
 
-// console.log(sortedProducts) // Массив отсортированных товаров
+const sortedProducts = sortProductsByPrice(inputProducts)
 
-// console.log(inputProducts) // Оригинальный массив не должен измениться
+console.log(sortedProducts) // Массив отсортированных товаров
+
+console.log(inputProducts) // Оригинальный массив не должен измениться
