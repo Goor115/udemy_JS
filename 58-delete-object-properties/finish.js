@@ -17,14 +17,17 @@ let person = {
   cartId: 435,
 }
 
-const { _id, processed, cart, ...person2 } = person
+{
+  let _id, processed, cart
+  ;({ _id, processed, cart, ...person } = person)
+}
 
 // delete person._id
 // delete person.processed
 // delete person.cart
 
 console.log(person)
-console.log(person2)
+
 /*
 {
   index: 4,
