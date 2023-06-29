@@ -8,6 +8,10 @@ const a = [1, 2, 3]
 
 // Напишите код здесь
 
+// const b = [...a]
+
+const b = Array.from(a)
+
 b.push('newElement')
 
 console.log(a)
